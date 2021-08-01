@@ -1,0 +1,13 @@
+.myImg{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.aboutSection{
+    margin-top: 100px;
+}
+.aboutText{
+    margin-top: 20px;
+    padding: 0px 30px 0px 30px;
+}

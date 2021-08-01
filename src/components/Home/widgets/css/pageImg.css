@@ -1,0 +1,42 @@
+.page-img{
+    height: 500px; 
+}
+.overlay{
+    height: inherit;
+    background-color: black;
+    opacity: 0.8;
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    padding-top: 150px;
+    padding-right: 400px;
+    padding-left: 60px;
+    /* line-height: 30px; */
+    /* font-size: 20px; */
+}
+.biggest-text{
+    font-weight: 800;
+    font-size: 50px;
+    color: rgb(211, 49, 49);
+}
+.small-text{
+  
+    color:red;
+    font-weight: 400;
+}
+
+
+@media  screen and (max-width:900px) {
+   .overlay{
+    padding-top: 100px;
+    padding-right: 30px;
+    padding-left: 10px;
+   
+   }
+   .page-img{
+       height: 600px;
+       padding-bottom: 50px;
+   }
+   .biggest-text{
+       font-size: 40px;
+   }
+}

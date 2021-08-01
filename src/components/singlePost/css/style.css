@@ -1,0 +1,91 @@
+.bg-img{
+    height: 250px;
+    padding-top: 10%;
+}
+.title{
+    font-weight: bolder;
+    color: white;
+    font-size: 30px;
+}
+#btn{
+    background-color: orange;
+    width: fit-content;
+    padding-top: 0;
+    padding-bottom: 0;
+    color: white;
+}
+.post_body{
+    font-family: 'Nunito', sans-serif;
+    margin-top: 60px;
+   
+}
+.post_body_title{
+    font-weight: 600;
+    font-size: 30px;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 30px;
+}
+.post_body_text{
+    font-size: 15px;
+    font-weight: lighter;
+    color: rgb(87, 82, 82);
+}
+.comment{
+    margin-top: 50px;
+}
+.form-group{
+    margin-bottom: 40px;
+}
+.avatar{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+.name{
+    font-weight: bolder;
+    font-size: 17px;
+    margin-bottom: 30px;
+}
+.time{
+    color: grey;
+    margin-bottom: 8px;
+    font-size: 12px;
+}
+.text{
+    color: rgb(77, 70, 70);
+    font-size: 13px;
+}
+.comments{
+    margin-bottom: 40px;
+}
+.row{
+    margin-bottom: 30px;
+}
+@media screen and (max-width:700px){
+    .title{
+        font-size: 22px;
+    }
+    .post_body_title{
+        font-size: 22px;
+    }
+    .bg-img{
+        padding-right: 20px;
+        padding-top: 30%;
+    }
+    .avatar{
+        width: 40px;
+        height: 40px;
+    }
+}
+@media screen and (max-width:1200px) and (min-width:801px){
+    .bg-img{
+        padding-top: 10%;
+    }
+}
+
+@media screen and (max-width:600px) and (min-width:800px){
+    .bg-img{
+        padding-top: 5%;
+    }
+}

@@ -1,17 +1,30 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from 'react'
+import ReactDOM from 'react-dom'
+import {BrowserRouter, Route, Switch} from 'react-router-dom'
+import Home from './components/Home/home'
+import Header from './global/header/header'
+import Footer from './global/footer/footer'
+import PostNew from './components/post_article/post_article'
+import FileUploadForm from './components/post_article/fileUpload'
+import PostNew_2 from './components/post_article/postnew'
+import SinglePost from './components/singlePost/post'
+ // "apiUrl":"http://localhost/blog/backend"
+const App = ()=>{
+  return(
+    <BrowserRouter>
+      <Header/>
+      
+      <Switch>
+        <Route path="/post_article" component={PostNew}/>
+        <Route path="/file" component={FileUploadForm}/>
+        <Route path="/postnew" component={PostNew_2}/>
+        <Route path="/singlepost/:id?" component={SinglePost}/>
+        <Route path="/" component={Home}/>
+      </Switch>
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+      <Footer/>
+    </BrowserRouter>
+  )
+}
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+ReactDOM.render(<App/>, document.querySelector('#root'))
